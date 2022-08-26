@@ -30,6 +30,6 @@ typedef struct STUD {
 } stud_kol;
 
 int student_exists(stud_kol* kol, student student);
-stud_kol* stud_kol_add(stud_kol* kol, char ime[], char prezime[], smer smer, int broj, int godina);
+stud_kol* stud_kol_add(stud_kol* kol, student student);
 
 #endif //GRADE_TRACKER_STUDENTI_H

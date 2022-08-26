@@ -6,7 +6,7 @@
 #define GRADE_TRACKER_PREDMETI_H
 
 typedef struct PRED {
-    char predmet[50];
+    char predmet[100];
     struct PRED* next;
 } pred_kol;
 

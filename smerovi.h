@@ -10,5 +10,6 @@ typedef enum {
 } smer;
 
 char* smer_to_string(smer smer);
+smer string_to_smer(char *naziv);
 
 #endif //GRADE_TRACKER_SMEROVI_H

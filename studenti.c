@@ -102,8 +102,7 @@ static stud_kol* stud_kol_add_rec(stud_kol* koren, stud_kol* element) {
     return koren;
 }
 
-stud_kol* stud_kol_add(stud_kol* kol, char ime[], char prezime[], smer smer, int broj, int godina) {
-    student student = student_create(ime, prezime, smer, broj, godina);
+stud_kol* stud_kol_add(stud_kol* kol, student student) {
     if (student_exists(kol, student))
         return kol;
     stud_kol* nova = stud_kol_create(student);
